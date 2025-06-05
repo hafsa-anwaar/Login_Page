@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Orbitron', sans-serif;
+}
+
+body {
+  height: 100vh;
+  background: radial-gradient(ellipse at center, #0f0c29, #302b63, #24243e);
+  color: #0ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.login-container {
+  background: rgba(0, 0, 0, 0.7);
+  padding: 3rem;
+  border-radius: 10px;
+  box-shadow: 0 0 30px #0ff, 0 0 10px #f0f;
+  width: 320px;
+}
+
+.login-box h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #0ff;
+  text-shadow: 0 0 5px #0ff, 0 0 10px #f0f;
+}
+
+.login-box input {
+  width: 100%;
+  padding: 0.75rem;
+  margin: 1rem 0;
+  border: 2px solid #0ff;
+  background: black;
+  color: #0ff;
+  border-radius: 5px;
+  outline: none;
+  box-shadow: 0 0 10px #0ff;
+}
+
+.login-box input::placeholder {
+  color: #0ff;
+  opacity: 0.6;
+}
+
+.login-box button {
+  width: 100%;
+  padding: 0.75rem;
+  background: linear-gradient(90deg, #ff00cc, #3333ff);
+  color: white;
+  border: none;
+  border-radius: 5
