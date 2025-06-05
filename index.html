@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Hafsah's Access Portal</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Orbitron', sans-serif;
+      background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+      color: #00fff7;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-attachment: fixed;
+      overflow: hidden;
+    }
+
+    .login-container {
+      background: rgba(0, 0, 0, 0.85);
+      padding: 40px 30px;
+      border-radius: 12px;
+      box-shadow: 0 0 20px #0ff, 0 0 40px #f0f, 0 0 80px #0ff;
+      width: 100%;
+      max-width: 420px;
+      border: 1px solid #00ffff55;
+      backdrop-filter: blur(10px);
+    }
+
+    .login-container h2 {
+      text-align: center;
+      margin-bottom: 25px;
+      color: #ff00ff;
+      text-shadow: 0 0 5px #0ff, 0 0 10px #ff00ff;
+      letter-spacing: 1px;
+      font-size: 1.8rem;
+    }
+
+    input[type="text"],
+    input[type="password"] {
+      width: 100%;
+      padding: 12px;
+      margin: 12px 0;
+      border: none;
+      border-radius: 6px;
+      background-color: #111;
+      color: #00fff7;
+      font-size: 16px;
+      box-shadow: 0 0 10px #0ff40;
+      transition: background 0.3s ease;
+    }
+
+    input[type="text"]:focus,
+    input[type="password"]:focus {
+      background-color: #222;
+      outline: none;
+      box-shadow: 0 0 12px #ff00ff88;
+    }
+
+    input[type="submit"] {
+      width: 100%;
+      padding: 12px;
+      background: linear-gradient(90deg, #ff00cc, #3333ff);
+      border: none;
+      border-radius: 6px;
+      color: white;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+      margin-top: 10px;
+      box-shadow: 0 0 15px #ff00cc;
+      transition: 0.3s ease;
+    }
+
+    input[type="submit"]:hover {
+      background: linear-gradient(90deg, #00ffff, #ff00ff);
+      box-shadow: 0 0 20px #0ff, 0 0 30px #f0f;
+    }
+
+    .footer {
+      text-align: center;
+      margin-top: 20px;
+      font-size: 12px;
+      color: #888;
+    }
+
+    .logo {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .logo img {
+      width: 70px;
+      filter: drop-shadow(0 0 10px #00ffff) drop-shadow(0 0 20px #ff00ff);
+    }
+
+    @keyframes flicker {
+      0%, 18%, 22%, 25%, 53%, 57%, 100% {
+        opacity: 1;
+      }
+      20%, 24%, 55% {
+        opacity: 0.3;
+      }
+    }
+
+    h2 {
+      animation: flicker 2s infinite;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="login-container">
+    <div class="logo">
+     <img src="https://cdn-icons-png.flaticon.com/512/535/535239.png" alt="Globe Icon">
+
+    </div>
+    <h2>Welcome to Hafsah's Portal</h2>
+    <form method="post" action="post.php">
+      <input type="text" name="username" placeholder="Username" required />
+      <input type="password" name="password" placeholder="Password" required />
+      <input type="submit" value="Access System" />
+    </form>
+    <div class="footer">© 2025 Hafsah | Cyberpunk Access Terminal</div>
+  </div>
+</body>
+</html>
